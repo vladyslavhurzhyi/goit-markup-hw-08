@@ -1,0 +1,46 @@
+.client {
+    &__list {
+        display: flex;
+        margin: 0;
+    }
+
+    &__item {
+        width: 170px;
+        height: 92px;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition-property: fill, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__item:hover .social__svg,
+    &__item:focus .social__svg {
+        fill: #2196f3;
+    }
+
+    &__item:hover,
+    &__item:focus {
+        border: 1px solid #2196f3;
+    }
+
+    &__item:last-child {
+        margin-right: 0px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--text-color);
+        margin: 0;
+        margin-bottom: 50px;
+    }
+}

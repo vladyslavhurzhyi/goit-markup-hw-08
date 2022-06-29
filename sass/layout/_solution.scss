@@ -1,0 +1,43 @@
+.solutions {
+    &__list {
+        display: flex;
+    }
+
+    &__card {
+        margin-bottom: 30px;
+        background: #f5f4fa;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        height: 120px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-size: var(--font-size);
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #757575;
+        margin: 0;
+    }
+}
+
+.benefits-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--font-size);
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin: 0;
+    margin-bottom: 10px;
+}

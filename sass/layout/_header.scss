@@ -1,0 +1,122 @@
+.headerportf {
+    border-bottom: #ececec;
+    border: 1px solid #c5c5c5;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+    &-main {
+        margin-right: auto;
+    }
+
+    &__logo {
+        margin-right: 93px;
+    }
+
+    &__logo__text {
+        color: #000000;
+    }
+
+    &__list {
+        display: flex;
+        margin: 0;
+    }
+
+    &-item {
+        position: relative;
+    }
+
+    &-item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-weight: 500;
+        font-size: var(--font-size);
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:focus,
+    &__link:hover {
+        color: var(--btncolor-hover);
+    }
+
+    &-item__icon {
+        fill: #757575;
+        margin-right: 10px;
+        transition-property: fill, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__list {
+        display: flex;
+    }
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+}
+
+.contact {
+    display: flex;
+
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: #757575;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-property: color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        font-weight: 500;
+        font-size: var(--font-size);
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--btncolor-hover);
+    }
+
+    &__link:hover .nav-item__icon,
+    &__link:focus .nav-item__icon {
+        fill: var(--btncolor-hover);
+    }
+}
