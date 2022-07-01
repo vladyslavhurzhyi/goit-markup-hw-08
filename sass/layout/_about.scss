@@ -1,5 +1,10 @@
 .about {
     padding-top: 0;
+    padding-bottom: 94px;
+
+    @media screen and(max-width: 1199px) {
+        display: none;
+    }
 
     &__title {
         font-weight: 700;
@@ -14,24 +19,31 @@
 
     &__list {
         display: flex;
-        padding-right: 30px;
+        // padding-right: 30px;
         margin: 0;
     }
+
+    // &__item:not(:last-child) {
+    //     padding-right: 30px;
+    // }
 
     &__item {
         position: relative;
         height: 294px;
+        display: flex;
+        flex-basis: calc((100% - 60px) / 3);
     }
 
-    &__item:not(:last-child) {
-        padding-right: 30px;
-        display: flex;
+    @media screen and(min-width: 1200px) {
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
     }
 
     &__text {
         position: absolute;
         height: 70px;
-        width: 370px;
+        width: 100%;
         bottom: 0;
         color: #ffffff;
         background: rgba(47, 48, 58, 0.8);
