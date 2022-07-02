@@ -65,10 +65,9 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .section {
-    padding: 200px 0px;
-  }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .backdrop {
@@ -491,9 +490,9 @@ img {
   background-color: #2f303a;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 1199px) {
-  .hero__thumb {
-    padding: 118px 60px;
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -569,17 +568,6 @@ img {
 
 .btn-center {
   margin: auto;
-}
-
-.section-solutions {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .section-solutions {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .solutions {
