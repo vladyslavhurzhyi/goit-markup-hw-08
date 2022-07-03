@@ -1,32 +1,48 @@
 .footer {
-    @media screen and(min-width:768px) {
+    @media screen and (min-width: 1199px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    @media screen and(min-width:1199px) {
+    @media screen and (min-width: 1199px) {
         display: flex;
         align-items: baseline;
         flex-wrap: wrap;
     }
 
     &__list {
+        padding-bottom: 60px;
+
         @media screen and(max-width:767px) {
+            text-align: center;
+        }
+
+        @media screen and(min-width:480px) and(max-width:767px) {
             padding-left: 124px;
             padding-right: 124px;
-            padding-bottom: 60px;
-            text-align: center;
         }
     }
 
     &__logo {
-        display: block;
         padding-top: 60px;
         padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
 
-        @media screen and(max-width:767px) {
+        @media screen and (min-width: 480px) and(max-width:767px) {
             padding: 60px 163px 20px 163px;
+        }
+
+        @media screen and (min-width: 1199px) {
+            display: block;
+            padding-top: 60px;
+            padding-bottom: 20px;
         }
     }
 
@@ -96,6 +112,11 @@
 }
 
 .footersoc {
+    padding-bottom: 60px;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding-top: 65px;
         padding-right: 89px;
@@ -107,11 +128,9 @@
         margin-right: 93px;
     }
 
-    @media screen and(max-width:767px) {
+    @media screen and(min-width:480px) and(max-width:767px) {
         padding-left: 137px;
         padding-right: 137px;
-        padding-bottom: 60px;
-        text-align: center;
     }
 
     &__title {
@@ -144,15 +163,15 @@
 }
 
 .footerform {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        text-align: center;
-        padding-bottom: 60px;
-    }
-
-    @media screen and(min-with:1199px) {
+    @media screen and (min-width: 1199px) {
         &__input {
             margin-right: 12px;
         }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        text-align: center;
+        padding-bottom: 60px;
     }
 
     @media screen and (min-width: 1199px) {

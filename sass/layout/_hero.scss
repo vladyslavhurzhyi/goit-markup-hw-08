@@ -83,6 +83,11 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    &__thumb {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .btn-center {

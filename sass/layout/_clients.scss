@@ -52,7 +52,7 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 767px) {
             flex-basis: calc((100% - 30px) / 2);
         }
 
