@@ -979,12 +979,11 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1199px) {
-  .footer {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+.footer-pad {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     display: -webkit-box;
@@ -1002,19 +1001,14 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
-.footer__list {
-  padding-bottom: 60px;
-}
 @media screen and (max-width: 767px) {
   .footer__list {
     text-align: center;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -1024,8 +1018,7 @@ img {
   }
 }
 .footer__logo {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1041,8 +1034,7 @@ img {
 @media screen and (min-width: 1199px) {
   .footer__logo {
     display: block;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
 }
 .footer__logo-text {
@@ -1062,18 +1054,16 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   display: block;
-  margin: 0;
 }
 .footer__email {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   display: block;
 }
 @media screen and (min-width: 1199px) {
   .footer__tel {
     display: block;
-    padding-bottom: 60px;
   }
 }
 .footer__text {
@@ -1097,33 +1087,30 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__contact {
-    margin-right: 165px;
-    margin-left: 76px;
     text-align: center;
-    padding-left: 8px;
-    padding-right: 8px;
     margin-bottom: 60px;
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .footer__contact {
+    margin-right: 70px;
   }
 }
 
-.footersoc {
-  padding-bottom: 60px;
-}
 @media screen and (max-width: 767px) {
   .footersoc {
     text-align: center;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footersoc {
-    padding-top: 65px;
-    padding-right: 89px;
     text-align: center;
   }
 }
 @media screen and (min-width: 1199px) {
   .footersoc {
-    margin-left: 70px;
     margin-right: 93px;
   }
 }
@@ -1167,7 +1154,6 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footerform {
     text-align: center;
-    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1199px) {
