@@ -1121,8 +1121,14 @@ img {
   }
 }
 .footersoc__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1428571429;
   color: #ffffff;
   font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
 }

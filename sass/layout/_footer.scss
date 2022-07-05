@@ -127,8 +127,14 @@
     }
 
     &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        line-height: calc(16 / 14);
         color: #ffffff;
         font-size: 14px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
         margin: 0;
         margin-bottom: 20px;
     }
