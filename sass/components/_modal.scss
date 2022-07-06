@@ -1,12 +1,9 @@
 .backdrop {
-    @media screen and(min-width:1200px) {
-    }
-
-    position: fixed;
-    top: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
     transition: opacity, visibility;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -18,23 +15,16 @@
 }
 
 .modal {
-    @media screen and(min-width:1200px) {
-        width: 528px;
-        min-height: 581px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
-    }
-
-    width: 100%;
-    height: 100%;
-    margin: 93px 15px;
+    width: calc(100% - 30px);
+    min-height: 609px;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms;
 
     &__title {
@@ -48,6 +38,8 @@
         color: #212121;
         margin-top: 40px;
         margin-bottom: 12px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
     &__wrap__input {
         width: 100%;
@@ -91,7 +83,11 @@
     }
 
     &__wrap__text {
-        width: 448px;
+        // width: 448px;
+        // height: 120px;
+        // для пк
+
+        width: 100%;
         height: 120px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
@@ -148,17 +144,31 @@
 }
 
 .formcheckbox {
-    padding-left: 52px;
-    padding-right: 52px;
+    // padding-left: 52px;
+    // padding-right: 52px;
+
+    padding-left: 40px;
+    padding-right: 40px;
     margin-bottom: 30px;
 
+    display: inline-block;
+
     &__text {
-        line-height: 1.71;
+        // line-height: 1.71;
+        // letter-spacing: 0.03em;
+        // color: #757575;
+        // margin: 0;
+        // display: flex;
+        // align-items: center;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: calc(14 / 12);
         letter-spacing: 0.03em;
         color: #757575;
-        margin: 0;
-        display: flex;
+        white-space: nowrap;
         align-items: center;
+        display: flex;
     }
 
     &__text span {
@@ -169,6 +179,7 @@
         align-items: center;
         justify-content: center;
         margin-right: 7px;
+        letter-spacing: 0.03em;
     }
 
     &__span {
