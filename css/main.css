@@ -108,6 +108,18 @@ img {
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
 }
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .modal__title {
   font-family: "Roboto";
   font-style: normal;
@@ -269,6 +281,12 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .formcheckbox__text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
+}
 .formcheckbox__text span {
   width: 16px;
   height: 15px;
@@ -295,6 +313,14 @@ img {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 479px) {
+  .formcheckbox__link {
+    display: contents;
+  }
 }
 
 .hidden {
@@ -302,7 +328,7 @@ img {
 }
 
 .checkbox {
-  margin-right: 10px;
+  position: absolute;
 }
 .checkbox:checked + .formcheckbox__text span {
   background-color: var(--btncolor-hover);
@@ -1311,10 +1337,10 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .section-mob .portfoliowrap {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+}
+.section-mob .portfoliowrap {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn__vse, .btn__website, .btn__app, .btn__design, .btn__marketing {
@@ -1541,7 +1567,7 @@ img {
     display: flex;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .portfolio-list {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);

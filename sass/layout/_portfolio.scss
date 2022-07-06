@@ -2,14 +2,12 @@
     @media screen and (max-width: 1199px) {
         padding-top: 60px;
         padding-bottom: 60px;
-
-        .portfoliowrap {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
+    }
+    .portfoliowrap {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
-
 .btn {
     &__vse,
     &__website,
@@ -225,7 +223,7 @@
         flex-wrap: wrap;
         margin: 0;
 
-        @media screen and (min-width: 1199px) {
+        @media screen and (min-width: 1200px) {
             flex-basis: calc((100% - 30px) / 2);
         }
     }
