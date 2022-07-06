@@ -1039,7 +1039,7 @@ img {
     padding: 60px 163px 20px 163px;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .footer__logo {
     display: block;
     margin-bottom: 20px;
