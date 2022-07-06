@@ -224,6 +224,10 @@
 
         flex-wrap: wrap;
         margin: 0;
+
+        @media screen and (min-width: 1199px) {
+            flex-basis: calc((100% - 30px) / 2);
+        }
     }
 
     &__img {

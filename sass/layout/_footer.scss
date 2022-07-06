@@ -4,15 +4,17 @@
 }
 
 .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    @media screen and (min-width: 1199px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
-        flex-wrap: wrap;
     }
 
     &__list {
@@ -21,9 +23,8 @@
             margin-bottom: 60px;
         }
 
-        @media screen and(min-width:480px) and(max-width:767px) {
-            padding-left: 124px;
-            padding-right: 124px;
+        @media screen and(min-width: 1200px) {
+            padding-right: 15px;
         }
     }
 
@@ -98,11 +99,9 @@
         @media screen and(min-width:768px) and (max-width: 1199px) {
             text-align: center;
             margin-bottom: 60px;
-            margin-right: 165px;
         }
 
         @media screen and (min-width: 1199px) {
-            margin-right: 70px;
         }
     }
 }
@@ -115,10 +114,11 @@
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         text-align: center;
+        margin-left: 165px;
     }
 
-    @media screen and(min-width:1199px) {
-        margin-right: 93px;
+    @media screen and(min-width:1200px) {
+        margin-left: 70px;
     }
 
     @media screen and(min-width:480px) and(max-width:767px) {
@@ -162,25 +162,28 @@
 }
 
 .footerform {
-    @media screen and (min-width: 1199px) {
-        &__input {
-            margin-right: 12px;
+    @media screen and (min-width: 768px) and(max-width:1199px) {
+        &__signup {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+
+        &__signup {
+            display: flex;
+            align-items: center;
         }
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         text-align: center;
-        // padding-bottom: 60px;
-    }
-
-    @media screen and (min-width: 1199px) {
-        white-space: nowrap;
     }
 
     @media screen and (max-width: 767px) {
         text-align: center;
-        padding-left: 15px;
-        padding-right: 15px;
+
         padding-bottom: 60px;
     }
 
@@ -216,6 +219,13 @@
         align-items: center;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__input {
+            margin-right: 12px;
+            width: 358px;
+        }
     }
 }
 
