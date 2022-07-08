@@ -391,6 +391,12 @@ img {
 .navigation {
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .navigation {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 .nav {
   display: -webkit-box;
@@ -422,6 +428,7 @@ img {
     display: flex;
     margin: 0;
     margin-right: auto;
+    margin-left: 88px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -431,16 +438,24 @@ img {
 }
 .nav-item {
   position: relative;
-  margin-left: 40px;
 }
 @media screen and (max-width: 767px) {
   .nav-item:not(:last-child) {
     margin-bottom: 32px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav .link-tel:last-child {
+    margin-left: 0px;
+  }
+  .nav-item:nth-child(n+2) {
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .nav-item:not(:last-child) {
     margin-right: 50px;
+    margin-left: 40px;
   }
 }
 .nav__link {
@@ -501,10 +516,23 @@ img {
   height: 40px;
 }
 
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-widht: 768px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-widht: 768px) and (max-width: 1199px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 @media screen and (max-width: 767px) {
   .contact {
@@ -575,6 +603,12 @@ img {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
+}
 
 .header__logo {
   display: -webkit-box;
@@ -583,13 +617,18 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: auto;
 }
 @media screen and (max-width: 767px) {
   .header__logo {
     margin-top: 16px;
     margin-bottom: 16px;
     margin-left: 15px;
+  }
+}
+@media screen and (min-widht: 768px) and (max-width: 1199px) {
+  .header__logo {
+    font-size: 24px;
+    line-height: 1.1666666667;
   }
 }
 
@@ -601,6 +640,12 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__logo-text {
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
 }
 
 .menu-button {
@@ -643,18 +688,25 @@ img {
   }
 }
 
-.menu-container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .menu-container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: absolute;
     top: 0;
     left: 0;
@@ -708,6 +760,19 @@ img {
 @media screen and (min-width: 768px) {
   .menu__soc {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 84px;
+    white-space: nowrap;
   }
 }
 
