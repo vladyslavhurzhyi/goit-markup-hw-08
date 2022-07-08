@@ -202,15 +202,17 @@
         color: var(--btncolor-hover);
     }
 
-    &-text::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 4px;
-        background-color: var(--btncolor-hover);
-        border-radius: 2px;
-        position: absolute;
-        bottom: 0;
+    @media screen and(min-width: 767px) {
+        &-text::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: var(--btncolor-hover);
+            border-radius: 2px;
+            position: absolute;
+            bottom: 0;
+        }
     }
 }
 
