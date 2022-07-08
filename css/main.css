@@ -79,6 +79,7 @@ img {
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
+  z-index: 2;
   -webkit-transition: opacity, visibility;
   transition: opacity, visibility;
   -webkit-transition-duration: 250ms;
@@ -614,6 +615,9 @@ img {
   margin-bottom: 10px;
   z-index: 1;
 }
+.menu-button:hover, .menu-button:focus {
+  fill: #2196f3;
+}
 .menu-button .iconclose {
   display: none;
 }
@@ -627,9 +631,6 @@ img {
   .menu-button {
     display: none;
   }
-}
-.menu-button.is-open body {
-  overflow: hidden;
 }
 
 .menu-container {
