@@ -198,7 +198,6 @@
     width: 40px;
     height: 40px;
     margin-left: auto;
-    border: 1px solid;
     align-items: center;
     margin-right: 15px;
     margin-top: 10px;
@@ -219,6 +218,10 @@
 
     @media screen and(min-width: 768px) {
         display: none;
+    }
+
+    &.is-open body {
+        overflow: hidden;
     }
 }
 
