@@ -30,6 +30,7 @@
     &__list {
         @media screen and (max-width: 767px) {
             margin-top: 48px;
+            margin-left: 40px;
         }
 
         @media screen and (min-width: 768px) {
@@ -142,6 +143,7 @@
         & {
             display: flex;
             flex-direction: column-reverse;
+            margin-left: 40px;
         }
 
         &__link {
@@ -276,6 +278,8 @@
     @media screen and (min-width: 768px) {
         flex-wrap: nowrap;
         display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
     }
 
     @media screen and(max-width: 767px) {
@@ -342,7 +346,11 @@
     @media screen and(min-width: 768px) {
         display: flex;
         align-items: center;
-        margin-left: 84px;
+
         white-space: nowrap;
     }
+}
+
+.menu-container-top {
+    display: flex;
 }
