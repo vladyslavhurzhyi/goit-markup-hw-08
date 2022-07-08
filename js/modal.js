@@ -14,6 +14,8 @@
         refs.body.classList.toggle('no-scroll')
     }
 })()
+
+// ______________________no-scroll-menu______________
 ;(() => {
     const refs = {
         openMenubtn: document.querySelector('[data-menu-open]'),
