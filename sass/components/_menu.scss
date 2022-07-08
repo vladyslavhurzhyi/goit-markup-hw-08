@@ -80,9 +80,11 @@
         }
     }
 
-    &__link:focus,
-    &__link:hover {
-        color: var(--btncolor-hover);
+    @media screen and(min-width: 768px) {
+        &__link:focus,
+        &__link:hover {
+            color: var(--btncolor-hover);
+        }
     }
 
     &-item__icon {
@@ -152,9 +154,11 @@
                 color: var(--btncolor-hover);
             }
 
-            &__link:hover .nav-item__icon,
-            &__link:focus .nav-item__icon {
-                fill: var(--btncolor-hover);
+            @media screen and(min-width: 768px) {
+                &__link:hover .nav-item__icon,
+                &__link:focus .nav-item__icon {
+                    fill: var(--btncolor-hover);
+                }
             }
         }
     }
@@ -203,6 +207,10 @@
     margin-top: 10px;
     margin-bottom: 10px;
     z-index: 1;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
         fill: #2196f3;
