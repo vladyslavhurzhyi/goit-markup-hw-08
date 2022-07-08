@@ -408,7 +408,6 @@ img {
 }
 .nav-main {
   margin-right: auto;
-  border-bottom: 1px solid #ececec;
 }
 .nav__logo {
   margin-right: 93px;
@@ -430,6 +429,11 @@ img {
     margin: 0;
     margin-right: auto;
     margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    margin-left: 93px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -461,7 +465,7 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .nav-item:not(:last-child) {
+  .nav .nav__item--footer {
     margin-right: 50px;
     margin-left: 40px;
   }
@@ -490,6 +494,11 @@ img {
   .nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav .link-tel {
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -524,7 +533,7 @@ img {
   height: 40px;
 }
 
-@media screen and (min-widht: 768px) {
+@media screen and (min-width: 1200px) {
   .contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -752,6 +761,15 @@ img {
     color: #757575;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .nav--tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
 @media screen and (max-width: 767px) {
   .nav--mail {
     font-size: 24px;
@@ -761,10 +779,46 @@ img {
 }
 @media screen and (min-width: 768px) {
   .nav--mail {
+    font-weight: 500;
     font-size: 12px;
     line-height: 1.1666666667;
     letter-spacing: 0.02em;
     color: #757575;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .nav--mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-item:hover .nav--mail,
+.nav-item:focus .nav--mail {
+    font-weight: 500;
+    font-size: var(--font-size);
+    line-height: 1.1428571429;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .nav-item:hover .nav--tel,
+.nav-item:focus .nav--tel {
+    font-weight: 500;
+    font-size: var(--font-size);
+    line-height: 1.1428571429;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .nav-item:hover .nav-item__icon,
+.nav-item:focus .nav-item__icon {
+    fill: var(--btncolor-hover);
   }
 }
 .menu__soc {

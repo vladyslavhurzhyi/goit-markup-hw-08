@@ -16,7 +16,6 @@
 
     &-main {
         margin-right: auto;
-        border-bottom: 1px solid #ececec;
     }
 
     &__logo {
@@ -38,6 +37,10 @@
             margin: 0;
             margin-right: auto;
             margin-left: 88px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 93px;
         }
     }
 
@@ -76,7 +79,7 @@
     }
 
     @media screen and(min-width: 1200px) {
-        &-item:not(:last-child) {
+        .nav__item--footer {
             margin-right: 50px;
             margin-left: 40px;
         }
@@ -102,6 +105,12 @@
         @media screen and(min-width: 768px) {
             padding-top: 32px;
             padding-bottom: 32px;
+        }
+    }
+
+    @media screen and(min-width: 1200px) {
+        .link-tel {
+            margin-left: 30px;
         }
     }
 
@@ -138,7 +147,7 @@
 }
 
 .contact {
-    @media screen and(min-widht: 768px) {
+    @media screen and(min-width: 1200px) {
         display: flex;
         align-items: center;
     }
@@ -324,6 +333,16 @@
         letter-spacing: 0.02em;
         color: #757575;
     }
+
+    @media screen and(min-width: 1200px) {
+        .nav--tel {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: calc(16 / 14);
+            letter-spacing: 0.02em;
+            color: #757575;
+        }
+    }
 }
 
 @media screen and(max-width: 767px) {
@@ -336,10 +355,49 @@
 
 @media screen and(min-width: 768px) {
     .nav--mail {
+        font-weight: 500;
         font-size: 12px;
         line-height: calc(14 / 12);
         letter-spacing: 0.02em;
         color: #757575;
+    }
+
+    @media screen and(min-width: 1200px) {
+        .nav--mail {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: calc(16 / 14);
+            letter-spacing: 0.02em;
+            color: #757575;
+        }
+    }
+}
+@media screen and(min-width: 1200px) {
+    .nav-item:hover .nav--mail,
+    .nav-item:focus .nav--mail {
+        font-weight: 500;
+        font-size: var(--font-size);
+        line-height: calc(16 / 14);
+        letter-spacing: 0.02em;
+        color: #2196f3;
+    }
+
+    @media screen and(min-width: 1200px) {
+        .nav-item:hover .nav--tel,
+        .nav-item:focus .nav--tel {
+            font-weight: 500;
+            font-size: var(--font-size);
+            line-height: calc(16 / 14);
+            letter-spacing: 0.02em;
+            color: #2196f3;
+        }
+    }
+
+    @media screen and(min-width: 1200px) {
+        .nav-item:hover .nav-item__icon,
+        .nav-item:focus .nav-item__icon {
+            fill: var(--btncolor-hover);
+        }
     }
 }
 
