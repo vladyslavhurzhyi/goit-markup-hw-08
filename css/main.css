@@ -72,6 +72,12 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .backdrop {
   width: 100%;
@@ -767,6 +773,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .nav--tel {
+    font-weight: 500;
     font-size: 12px;
     line-height: 1.1666666667;
     letter-spacing: 0.02em;
@@ -1016,12 +1023,16 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
   margin: 0;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .solutions__title {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .solutions__list {

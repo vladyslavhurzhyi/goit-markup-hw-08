@@ -48,12 +48,16 @@
         font-weight: 700;
         font-size: 14px;
         line-height: calc(16 / 14);
-        text-align: center;
+
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #212121;
         margin: 0;
         margin-bottom: 10px;
+
+        @media screen and(max-width: 767px) {
+            text-align: center;
+        }
     }
 
     &__list {
