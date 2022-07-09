@@ -468,9 +468,13 @@ img {
     margin-left: 50px;
   }
 }
+@media screen and (max-width: 767px) {
+  .nav .nav-item--mail.nav-item--mail {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
-  .nav .nav__item--footer {
-    margin-right: 50px;
+  .nav .nav__item--footer:not(:first-child) {
     margin-left: 40px;
   }
 }
