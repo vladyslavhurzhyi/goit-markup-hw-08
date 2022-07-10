@@ -89,7 +89,7 @@
     }
 
     @media screen and(min-width: 1200px) {
-        .nav__item--footer:not(:first-child) {
+        .item-footer:not(:first-child) {
             // margin-right: 50px;
             margin-left: 40px;
         }
@@ -332,7 +332,7 @@
 }
 
 @media screen and(max-width: 767px) {
-    .nav--tel {
+    .nav-tel {
         font-size: 34px;
         line-height: calc(40 / 30);
         color: #2196f3;
@@ -341,7 +341,7 @@
 }
 
 @media screen and(min-width: 768px) {
-    .nav--tel {
+    .nav-tel {
         font-weight: 500;
         font-size: 12px;
         line-height: calc(14 / 12);
@@ -351,7 +351,7 @@
     }
 
     @media screen and(min-width: 1200px) {
-        .nav--tel {
+        .nav-tel {
             font-weight: 500;
             font-size: 14px;
             line-height: calc(16 / 14);
@@ -362,7 +362,7 @@
 }
 
 @media screen and(max-width: 767px) {
-    .nav--mail {
+    .nav-mail {
         font-size: 24px;
         line-height: 28px;
         margin-bottom: 64px;
@@ -370,7 +370,7 @@
 }
 
 @media screen and(min-width: 768px) {
-    .nav--mail {
+    .nav-mail {
         font-weight: 500;
         font-size: 12px;
         line-height: calc(14 / 12);
@@ -380,7 +380,7 @@
     }
 
     @media screen and(min-width: 1200px) {
-        .nav--mail {
+        .nav-mail {
             font-weight: 500;
             font-size: 14px;
             line-height: calc(16 / 14);
@@ -390,8 +390,8 @@
     }
 }
 @media screen and(min-width: 1200px) {
-    .nav-item:hover .nav--mail,
-    .nav-item:focus .nav--mail {
+    .nav-item:hover .nav-mail,
+    .nav-item:focus .nav-mail {
         font-weight: 500;
         font-size: var(--font-size);
         line-height: calc(16 / 14);
@@ -400,8 +400,8 @@
     }
 
     @media screen and(min-width: 1200px) {
-        .nav-item:hover .nav--tel,
-        .nav-item:focus .nav--tel {
+        .nav-item:hover .nav-tel,
+        .nav-item:focus .nav-tel {
             font-weight: 500;
             font-size: var(--font-size);
             line-height: calc(16 / 14);
@@ -418,7 +418,7 @@
     }
 }
 
-.menu__soc {
+.menu-soc {
     display: flex;
     margin-left: 40px;
     margin-bottom: 48px;
