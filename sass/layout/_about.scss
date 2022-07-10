@@ -2,6 +2,11 @@
     padding-top: 0;
     padding-bottom: 94px;
 
+    &__wrap {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     @media screen and(max-width: 1199px) {
         display: none;
     }

@@ -1105,6 +1105,10 @@ img {
   padding-top: 0;
   padding-bottom: 94px;
 }
+.about__wrap {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 @media screen and (max-width: 1199px) {
   .about {
     display: none;
