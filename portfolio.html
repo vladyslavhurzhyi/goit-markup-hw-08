@@ -12,7 +12,6 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <link rel="stylesheet" href="./css/styles.css" />
         <link rel="stylesheet" href="./css/main.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -165,13 +164,36 @@
                     <ul class="portfolio-list portfolio">
                         <li class="portfolio__item">
                             <div class="thumb">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img11.jpg"
-                                    alt="Технокряк"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture
+                                    ><source
+                                        srcset="
+                                            ./images/img11.jpg    1x,
+                                            ./images/img11-2x.jpg 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img11-tab.jpg    1x,
+                                            ./images/img11-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img11-mob.jpg    1x,
+                                            ./images/img11-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width: 320px)"
+                                    />
+                                    <img
+                                        src="./images/img11.jpg"
+                                        class="portfolio__img"
+                                        alt="Технокряк"
+                                        width="450"
+                                        height="294"
+                                    />
+                                </picture>
 
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с
@@ -188,13 +210,36 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="thumb">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img22.jpg"
-                                    alt="Постер New Orlean vs Golden Star"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture
+                                    ><source
+                                        srcset="
+                                            ./images/img22.jpg    1x,
+                                            ./images/img22-2x.jpg 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img22-tab.jpg    1x,
+                                            ./images/img22-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img22-mob.jpg    1x,
+                                            ./images/img22-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width: 320px)"
+                                    />
+                                    <img
+                                        src="./images/img22.jpg"
+                                        class="portfolio__img"
+                                        alt="Постер New Orlean vs Golden Star"
+                                        width="450"
+                                        height="294"
+                                    />
+                                </picture>
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все
@@ -212,13 +257,36 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="thumb">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img33.jpg"
-                                    alt="Ресторан Seafood"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture
+                                    ><source
+                                        srcset="
+                                            ./images/img33.jpg    1x,
+                                            ./images/img33-2x.jpg 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img33-tab.jpg    1x,
+                                            ./images/img33-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img33-mob.jpg    1x,
+                                            ./images/img33-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width: 320px)"
+                                    />
+                                    <img
+                                        src="./images/img33.jpg"
+                                        class="portfolio__img"
+                                        alt="Ресторан Seafood"
+                                        width="450"
+                                        height="294"
+                                    />
+                                </picture>
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все
@@ -236,13 +304,36 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="thumb">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img44.jpg"
-                                    alt="Проект Prime"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture
+                                    ><source
+                                        srcset="
+                                            ./images/img44.jpg    1x,
+                                            ./images/img44-2x.jpg 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img44-tab.jpg    1x,
+                                            ./images/img44-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img44-mob.jpg    1x,
+                                            ./images/img44-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width: 320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img44.jpg"
+                                        alt="Проект Prime"
+                                        width="450"
+                                        height="294"
+                                    />
+                                </picture>
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все
@@ -258,13 +349,36 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="thumb">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img55.jpg"
-                                    alt="Проект Boxes"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture
+                                    ><source
+                                        srcset="
+                                            ./images/img55.jpg    1x,
+                                            ./images/img55-2x.jpg 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img55-tab.jpg    1x,
+                                            ./images/img55-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img55-mob.jpg    1x,
+                                            ./images/img55-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width: 320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img55.jpg"
+                                        alt="Проект Boxes"
+                                        width="450"
+                                        height="294"
+                                    />
+                                </picture>
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все
@@ -280,13 +394,36 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="thumb">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img66.jpg"
-                                    alt="Inspiration has no Borders"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture
+                                    ><source
+                                        srcset="
+                                            ./images/img66.jpg    1x,
+                                            ./images/img66-2x.jpg 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img66-tab.jpg    1x,
+                                            ./images/img66-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img66-mob.jpg    1x,
+                                            ./images/img66-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width: 320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img66.jpg"
+                                        alt="Inspiration has no Borders"
+                                        width="450"
+                                        height="294"
+                                    />
+                                </picture>
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все
@@ -304,13 +441,36 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="thumb">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img77.jpg"
-                                    alt="Издание Limited Edition"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture
+                                    ><source
+                                        srcset="
+                                            ./images/img77.jpg    1x,
+                                            ./images/img77-2x.jpg 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img77-tab.jpg    1x,
+                                            ./images/img77-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img77-mob.jpg    1x,
+                                            ./images/img77-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width: 320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img77.jpg"
+                                        alt="Издание Limited Edition"
+                                        width="450"
+                                        height="294"
+                                    />
+                                </picture>
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все
@@ -328,13 +488,36 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="thumb">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img88.jpg"
-                                    alt="Проект LAB"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture
+                                    ><source
+                                        srcset="
+                                            ./images/img88.jpg    1x,
+                                            ./images/img88-2x.jpg 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img88-tab.jpg    1x,
+                                            ./images/img88-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img88-mob.jpg    1x,
+                                            ./images/img88-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width: 320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img88.jpg"
+                                        alt="Проект LAB"
+                                        width="450"
+                                        height="294"
+                                    />
+                                </picture>
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все
@@ -350,13 +533,36 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="thumb">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img99.jpg"
-                                    alt="Growing Business"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture
+                                    ><source
+                                        srcset="
+                                            ./images/img99.jpg    1x,
+                                            ./images/img99-2x.jpg 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img99-tab.jpg    1x,
+                                            ./images/img99-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img99-mob.jpg    1x,
+                                            ./images/img99-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width: 320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img99.jpg"
+                                        alt="Growing Business"
+                                        width="450"
+                                        height="294"
+                                    />
+                                </picture>
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все
@@ -377,127 +583,122 @@
             </section>
         </main>
         <footer class="footer-pad">
-            <section>
-                <div class="container footer">
-                    <div class="footer__contact">
-                        <a
-                            href="./index.html"
-                            class="logo footer__logo"
-                            lang="en"
-                            >Web<span class="footer__logo-text">Studio</span></a
-                        >
+            <div class="container footer">
+                <div class="footer__contact">
+                    <a href="./index.html" class="logo footer__logo" lang="en"
+                        >Web<span class="footer__logo-text">Studio</span></a
+                    >
 
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a
-                                    href="https://goo.gl/maps/aNRmM5jgGCXuYNQ1A"
-                                    target="_blank"
-                                    rel="noopener nofollow noreferrer"
-                                    class="footer__link link"
-                                    >г. Киев, пр-т Леси Украинки, 26
-                                </a>
-                            </li>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a
+                                href="https://goo.gl/maps/aNRmM5jgGCXuYNQ1A"
+                                target="_blank"
+                                rel="noopener nofollow noreferrer"
+                                class="footer__link link"
+                                >г. Киев, пр-т Леси Украинки, 26
+                            </a>
+                        </li>
 
-                            <li>
-                                <a
-                                    class="footer__text footer__email"
-                                    href="mailto:info@example.com"
-                                    >info@example.com</a
+                        <li>
+                            <a
+                                class="footer__text footer__email"
+                                href="mailto:info@example.com"
+                                >info@example.com</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="footer__text footer__tel"
+                                href="tel:+380961111111"
+                                >+38 096 111 11 11</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="footersoc">
+                    <p class="footersoc__title">ПРИСОЕДИНЯЙТЕСЬ</p>
+                    <ul class="footersoc__list social">
+                        <li class="footersoc__item">
+                            <a href="" class="social__link">
+                                <svg
+                                    class="social__svg footersoc__svg"
+                                    width="20"
+                                    height="20"
                                 >
-                            </li>
-                            <li>
-                                <a
-                                    class="footer__text footer__tel"
-                                    href="tel:+380961111111"
-                                    >+38 096 111 11 11</a
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footersoc__item">
+                            <a href="" class="social__link">
+                                <svg
+                                    class="social__svg footersoc__svg"
+                                    width="20"
+                                    height="20"
                                 >
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footersoc">
-                        <p class="footersoc__title">ПРИСОЕДИНЯЙТЕСЬ</p>
-                        <ul class="footersoc__list social">
-                            <li class="footersoc__item">
-                                <a href="" class="social__link">
-                                    <svg
-                                        class="social__svg footersoc__svg"
-                                        width="20"
-                                        height="20"
-                                    >
-                                        <use
-                                            href="./images/icons.svg#icon-instagram"
-                                        ></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footersoc__item">
-                                <a href="" class="social__link">
-                                    <svg
-                                        class="social__svg footersoc__svg"
-                                        width="20"
-                                        height="20"
-                                    >
-                                        <use
-                                            href="./images/icons.svg#icon-twitter"
-                                        ></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footersoc__item">
-                                <a href="" class="social__link">
-                                    <svg
-                                        class="social__svg footersoc__svg"
-                                        width="20"
-                                        height="20"
-                                    >
-                                        <use
-                                            href="./images/icons.svg#icon-facebook"
-                                        ></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footersoc__item">
-                                <a href="" class="social__link">
-                                    <svg
-                                        class="social__svg footersoc__svg"
-                                        width="20"
-                                        height="20"
-                                    >
-                                        <use
-                                            href="./images/icons.svg#icon-linkedin"
-                                        ></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footerform">
-                        <p class="footersoc__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-                        <div class="formwrap">
-                            <form class="footerform__signup" name="connectform">
-                                <input
-                                    class="footerform__input"
-                                    type="email"
-                                    name="email"
-                                    placeholder="E-mail"
-                                />
-                                <button class="buttonfooter" type="submit">
-                                    Подписаться
-                                    <svg
-                                        class="buttonfooter__svg"
-                                        width="24"
-                                        height="24"
-                                    >
-                                        <use
-                                            href="./images/icons.svg#icon-send"
-                                        ></use>
-                                    </svg>
-                                </button>
-                            </form>
-                        </div>
+                                    <use
+                                        href="./images/icons.svg#icon-twitter"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footersoc__item">
+                            <a href="" class="social__link">
+                                <svg
+                                    class="social__svg footersoc__svg"
+                                    width="20"
+                                    height="20"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footersoc__item">
+                            <a href="" class="social__link">
+                                <svg
+                                    class="social__svg footersoc__svg"
+                                    width="20"
+                                    height="20"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-linkedin"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footerform">
+                    <p class="footersoc__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+                    <div class="formwrap">
+                        <form class="footerform__signup" name="connectform">
+                            <input
+                                class="footerform__input"
+                                type="email"
+                                name="email"
+                                placeholder="E-mail"
+                            />
+                            <button class="buttonfooter" type="submit">
+                                Подписаться
+                                <svg
+                                    class="buttonfooter__svg"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-send"
+                                    ></use>
+                                </svg>
+                            </button>
+                        </form>
                     </div>
                 </div>
-            </section>
+            </div>
         </footer>
         <script src="./js/menu.js"></script>
         <script src="./js/scroll.js"></script>

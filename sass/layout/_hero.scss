@@ -1,17 +1,24 @@
 .hero {
-    @media screen and (min-width: 1200px) {
-        padding: 200px 0px;
-    }
-
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
         ),
-        url(../images/herobg-mob.png);
+        url(../images/herobg-mob.jpg);
     background-position: center;
     background-color: #2f303a;
     // padding: 200px 0;
     background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/herobg-mob-2x.jpg);
+    }
 
     @media screen and (min-width: 768px) {
         max-width: 768px;
@@ -20,18 +27,38 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
             ),
-            url(../images/herobg-tab.png);
+            url(../images/herobg-tab.jpg);
         margin: 0 auto;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                url(../images/herobg-tab-2x.jpg);
+        }
     }
 
     @media screen and (min-width: 1200px) {
+        padding: 200px 0px;
         max-width: 1600px;
         height: 600px;
         background-image: linear-gradient(
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
             ),
-            url(../images/herobg.png);
+            url(../images/herobg.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                url(../images/herobg-2x.jpg);
+        }
     }
 
     &__btn:hover,
